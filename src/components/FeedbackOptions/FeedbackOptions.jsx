@@ -10,7 +10,9 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
       <ul>
         {options.map(key => (
           <li key={key}>
-            <Button type="button" onClick={onLeaveFeedback}></Button>
+            <Button type="button" onClick={onLeaveFeedback}>
+              {key}
+            </Button>
           </li>
         ))}
       </ul>
