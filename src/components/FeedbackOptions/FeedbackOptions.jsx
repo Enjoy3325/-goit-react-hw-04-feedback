@@ -1,6 +1,6 @@
 import { Button } from 'components/Button/Button';
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 // Отрисовываю заголовок и кнопки баттон. Должна отображаться в Апп
 export function FeedbackOptions({ options, onLeaveFeedback }) {
@@ -20,4 +20,4 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
   );
 }
 
-FeedbackOptions.propTypes = {};
+// FeedbackOptions.propTypes = {};
