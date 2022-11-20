@@ -1,11 +1,10 @@
-import React from 'react';
 // import PropTypes from 'prop-types';
+import React from 'react';
 
 // Отрисовываю заголовок и кнопки баттон. Должна отображаться в Апп
 export function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <div>
-      <h1>Please leave feedback</h1>
       <ul>
         {options.map(key => (
           <li key={key}>
@@ -19,4 +18,7 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
   );
 }
 
-// FeedbackOptions.propTypes = {};
+// FeedbackOptions.propTypes = {
+//   options: PropTypes.array.isRequired,
+//   onLeaveFeedback: PropTypes.func.isRequired,
+// };
