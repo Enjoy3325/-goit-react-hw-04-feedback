@@ -1,5 +1,5 @@
+import PropTypes from 'prop-types';
 import { SectionBox, TitleHead } from './Section.styled';
-// import PropTypes from 'prop-types';
 import React from 'react';
 
 export const Section = ({ title, children }) => {
@@ -11,7 +11,7 @@ export const Section = ({ title, children }) => {
   );
 };
 
-// Section.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   children: PropTypes.node.isRequired,
-// };
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};

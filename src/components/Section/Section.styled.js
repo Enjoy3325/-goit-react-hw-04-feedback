@@ -2,39 +2,29 @@ import styled from 'styled-components';
 
 export const SectionBox = styled.div`
   display: flex;
+  width: 100vw;
+  height: 100vh;
+
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient();
-  width: 100vw;
-  height: 100vh;
+
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+
+  border-style: inset;
+`;
+
+/* background-image: linear-gradient();
+
+
   background-image: url('https://images.unsplash.com/photo-1539035104074-dee66086b5e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=2550&q=80');
-  background-size: cover;
-  transform: translateX(var(--x)) translateY(var(--y)) scale(var(--scale));
-  transition: ease-out 0.7s;
-`;
+  background-size: cover; */
 export const TitleHead = styled.h1`
-  font-size: 900;
-  font-weight: 30px;
+  font-size: 30px;
+  font-weight: 900;
   line-height: 1.72;
-  color: #c98d2a;
+  color: #456071;
+  margin-bottom: 20px;
 `;
-
-// :root {
-//   --scale: 1.5
-//   --y: 0;
-//   overflow: hidden;
-// body {
-//   margin: 0;
-//   background-color: black;
-//   outline: none;
-//   border: none;
-//     #wrapper {
-//     width: 100vw;
-//     height: 100vh;
-//       #image {
-
-//       }
-//   }
-// }
-// }

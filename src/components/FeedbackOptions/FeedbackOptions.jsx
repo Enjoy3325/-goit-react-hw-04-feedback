@@ -1,24 +1,30 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import {
+  BoxButton,
+  ListButton,
+  ItemButton,
+  ButtonStyle,
+  TextButton,
+} from './FeedbackOptions.styled';
 import React from 'react';
 
-// Отрисовываю заголовок и кнопки баттон. Должна отображаться в Апп
 export function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
-    <div>
-      <ul>
+    <BoxButton>
+      <ListButton>
         {options.map(key => (
-          <li key={key}>
-            <button type="button" onClick={onLeaveFeedback}>
-              {key}
-            </button>
-          </li>
+          <ItemButton key={key}>
+            <ButtonStyle type="button" onClick={onLeaveFeedback}>
+              <TextButton>{key}</TextButton>
+            </ButtonStyle>
+          </ItemButton>
         ))}
-      </ul>
-    </div>
+      </ListButton>
+    </BoxButton>
   );
 }
 
-// FeedbackOptions.propTypes = {
-//   options: PropTypes.array.isRequired,
-//   onLeaveFeedback: PropTypes.func.isRequired,
-// };
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+};

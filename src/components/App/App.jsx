@@ -2,6 +2,7 @@ import { Notification } from '../Notification/Notification';
 import { Section } from '../Section/Section';
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Statistics } from 'components/Statistics/Statistics';
+import { Wrapper } from './App.styled';
 import React, { Component } from 'react';
 export class App extends Component {
   state = {
@@ -55,7 +56,7 @@ export class App extends Component {
       //   onMouseMove={this.handleMouseMove}
       //   onClick={this.handleMouseLeave}
       // >
-      <div>
+      <Wrapper>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={keys}
@@ -73,7 +74,7 @@ export class App extends Component {
             <Notification message="There is no feedback" />
           )}
         </Section>
-      </div>
+      </Wrapper>
       // <img id="image" />
       // </div>
     );
