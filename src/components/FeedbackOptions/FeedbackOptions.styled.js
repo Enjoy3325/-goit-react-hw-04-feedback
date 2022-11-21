@@ -13,7 +13,7 @@ export const ButtonStyle = styled.button`
   border: 3px solid #ffe425;
   border-radius: 20px;
   line-height: 1.62;
-  transition: 0.25s;
+  transition: 0.35s;
   margin: 15px auto;
   padding: 15px 55px;
   color: #456071;
@@ -21,7 +21,7 @@ export const ButtonStyle = styled.button`
   :hover,
   :focus {
     box-shadow: 0 0.8em 0.8em -0.6em #00e3ff;
-    transform: translateY(-0.25em);
+    transform: translateY(-0.35em);
     border: 3px solid #00e3ff;
     color: #ff4157;
   }
