@@ -14,7 +14,7 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
       <ListButton>
         {options.map(key => (
           <ItemButton key={key}>
-            <ButtonStyle type="button" onClick={onLeaveFeedback}>
+            <ButtonStyle type="button" onClick={() => onLeaveFeedback(key)}>
               <TextButton>{key}</TextButton>
             </ButtonStyle>
           </ItemButton>
