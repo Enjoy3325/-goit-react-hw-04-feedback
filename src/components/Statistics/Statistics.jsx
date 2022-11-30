@@ -8,7 +8,7 @@ import React from 'react';
 export function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
     <StatisticBox>
-      <TitleStatistic>Statistics</TitleStatistic>
+      <TitleStatistic>Statistics:</TitleStatistic>
       <TextStatistic>Good:{good}</TextStatistic>
       <TextStatistic>Neutral:{neutral}</TextStatistic>
       <TextStatistic>Bad:{bad}</TextStatistic>
